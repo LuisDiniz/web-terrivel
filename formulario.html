@@ -10,7 +10,7 @@
 
 	<body>
 
-		<form action="http://terrivel.herokuapp.com/monster" method="GET">
+		<form action="http://terrivel.herokuapp.com/monster" method="POST">
 			<fieldset>
 				<label>Quantidade de Pedras: <input name="num_pedras" type="text" pattern="[0-9]*" required></label>
 				<br> <br>
@@ -22,14 +22,15 @@
 				<br> <br>
 				<label>Cor 2: <input name="corCeu2" type="color" required></label>
 				<br> <br>
-
-<label for="sabor">Sabor da pizza:</label>
-<select name="sabor" id="sabor">
-  <option value="marg">Marguerita</option>
-  <option value="muzza" selected>Muzzarela</option>
-</select>
-				
-				<label>Tipo das Pedras:<input name="tipo_pedras" type="dropbox" value="marroada" required></label>
+				<label for="tipo_pedras">Tipo das Pedras:</label>
+				<select name="tipo_pedras" required>
+					<option value="marroada">Marroada</option>
+					<option value="ametista">Ametista</option>
+					<option value="topazio">Topazio</option>
+					<option value="espinela">Espinela</option>
+				</select>			
+				<br> <br>
+				<label><input type="checkbox" name="tipo_pedras_sortidas" value="sim"> Pedras Sortidas</label>
 				<br> <br>
 				<button>Enviar</button>
 			</fieldset>

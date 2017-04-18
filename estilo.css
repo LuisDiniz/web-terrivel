@@ -1,0 +1,11 @@
+form{
+	display: table;
+}
+
+input{
+	display: table-row;
+}
+
+span{
+	display: table-row;
+}
